@@ -1,0 +1,14 @@
+{
+  "mrkdwn_in": ["pretext"],
+  "fallback": "{projectName} | MR {mergeRequestId} from {authorName} {mergeRequestAction}| See {mergeRequestUrl}",
+  "pretext": "{mergeRequestIcon} MR *{mergeRequestId}* {mergeRequestAction}",
+  "color": "{color}",
+  "author_name": "{authorName}",
+  "author_link": "{authorLink}",
+  "author_icon": "{authorIcon}",
+  "title": "MR {mergeRequestId} - {mergeRequestTitle}",
+  "title_link": "{mergeRequestUrl}",
+  "fields": "<fields>",
+  "actions": "<actions>",
+  "ts": "{timestamp}"
+}

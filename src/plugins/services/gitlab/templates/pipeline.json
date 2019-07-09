@@ -1,0 +1,14 @@
+{
+  "mrkdwn_in": ["pretext", "fields"],
+  "fallback": "{projectName} | Pipeline {pipelineId} on branch {pipelineBranch} finished with [{pipelineStatus}] status | See {pipelineLink}",
+  "pretext": "{pipelineIcon} Pipeline *{pipelineId}* on branch {pipelineBranch}",
+  "color": "{color}",
+  "author_name": "{authorName}",
+  "author_link": "{authorLink}",
+  "author_icon": "{authorIcon}",
+  "title": "Pipeline {pipelineId}",
+  "title_link": "{pipelineLink}",
+  "fields": "<fields>",
+  "actions": "<actions>",
+  "ts": "{timestamp}"
+}

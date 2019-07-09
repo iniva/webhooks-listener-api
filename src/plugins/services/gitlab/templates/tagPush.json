@@ -1,0 +1,14 @@
+{
+  "fallback": "{projectName} | New Tag {tagVersion} from {authorName} | See {tagLink}",
+  "pretext": "{tagIcon} new Tag {tagVersion} created",
+  "color": "{color}",
+  "author_name": "{authorName}",
+  "author_link": "{authorLink}",
+  "author_icon": "{authorIcon}",
+  "thumb_url": "{thumbUrl}",
+  "title": "Tag {tagVersion}",
+  "title_link": "{tagLink}",
+  "fields": "<fields>",
+  "actions": "<actions>",
+  "ts": "{timestamp}"
+}

@@ -1,0 +1,14 @@
+{
+  "mrkdwn_in": ["pretext", "fields"],
+  "fallback": "{projectName} | {authorName} commented on MR {mergeRequestId} | See {commentLink}",
+  "pretext": "{commentIcon} New comment on *MR {mergeRequestId} - {mergeRequestTitle}*",
+  "color": "{color}",
+  "author_name": "{authorName}",
+  "author_link": "{authorLink}",
+  "author_icon": "{authorIcon}",
+  "title": "Comment from {authorName}",
+  "title_link": "{commentLink}",
+  "fields": "<fields>",
+  "actions": "<actions>",
+  "ts": "{timestamp}"
+}

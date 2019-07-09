@@ -1,0 +1,31 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "node": "current"
+      },
+      "useBuiltIns": "entry",
+      "corejs": "2"
+    }],
+    ["airbnb", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    ["@babel/plugin-proposal-object-rest-spread", {
+      "loose": true,
+      "useBuiltIns": true
+    }],
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "Config": "./src/config",
+        "Plugins": "./src/plugins",
+        "Utils": "./src/utils"
+      }
+    }]
+  ]
+}

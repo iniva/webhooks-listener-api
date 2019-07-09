@@ -1,0 +1,89 @@
+{
+  "name": "webhooks-listener-api",
+  "description": "Webhooks Listener & Slack Notifier",
+  "version": "1.0.0",
+  "main": "init.js",
+  "repository": "git@github.com:iniva/webhooks-listener-api.git",
+  "author": {
+    "name": "Tony DBR",
+    "email": "tonyblast@gmail.com",
+    "url": "https://github.com/iniva"
+  },
+  "license": "MIT",
+  "keywords": [
+    "slack",
+    "gitlab",
+    "webhooks",
+    "events",
+    "hapi",
+    "api",
+    "nodejs"
+  ],
+  "bugs": {
+    "url": "https://github.com/iniva/webhooks-listener-api/issues"
+  },
+  "engines": {
+    "node": ">=10",
+    "yarn": ">=1.10.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "commit": "git-cz",
+    "build": "yarn clean && babel src --out-dir dist --source-maps --copy-files",
+    "lint": "eslint src hooks",
+    "hooks:message": "node hooks/index.js --action=message",
+    "start:dist": "node dist/index.js",
+    "start:dev": "nodemon -r dotenv/config init.js",
+    "test": "BABEL_ENV=test NODE_ENV=test jest",
+    "test:coverage": "yarn test --coverage"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.5",
+    "@hapi/boom": "^7.4.2",
+    "@hapi/good": "^8.2.0",
+    "@hapi/good-console": "^8.1.0",
+    "@hapi/good-squeeze": "^5.2.0",
+    "@hapi/hapi": "^18.3.1",
+    "@hapi/joi": "^15.0.3",
+    "@slack/webhook": "^5.0.0",
+    "agentkeepalive": "^4.0.2",
+    "blipp": "^4.0.0",
+    "core-js": "2",
+    "debug": "^4.1.0",
+    "dotenv": "^8.0.0",
+    "got": "^9.6.0",
+    "slack-webhooks-handler": "^1.2.0",
+    "webpack-merge": "^4.1.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "@types/jest": "^24.0.13",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.8.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-preset-airbnb": "^3.2.1",
+    "commitizen": "^3.1.1",
+    "coveralls": "^3.0.3",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-babel-module": "^5.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "husky": "^2.3.0",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.0",
+    "refs-compiler": "^2.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
